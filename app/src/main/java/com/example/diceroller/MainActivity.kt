@@ -20,9 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             DiceRollerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
+                    DiceRollerApp(
                     )
                 }
             }
@@ -31,17 +29,19 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun DiceRollerApp() {
+    DiceWithButtonAndImage()
+}
+
+@Composable
+fun DiceWithButtonAndImage(modifier: Modifier = Modifier) {
+
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun DiceRollerAppPreview() {
     DiceRollerTheme {
-        Greeting("Android")
+        DiceRollerApp()
     }
 }
