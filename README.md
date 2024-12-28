@@ -11,7 +11,7 @@ A simple Android app built with Jetpack Compose to simulate rolling a dice.
 
 ## Screenshots
 
-![Screenshot](src/main/Screenshot%202024-12-28%20041302.png)
+![Screenshot](app/src/main/Screenshot%202024-12-28%20041302.png)
 
 ## Installation
 
